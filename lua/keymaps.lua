@@ -19,4 +19,3 @@ map("v", ">", ">gv")
 
 -- NvimTree
 map("n", "<Space><Space>", ":NvimTreeToggle<CR>")
-map("n", "<Space>e", ":NvimTreeFocus<CR>")
