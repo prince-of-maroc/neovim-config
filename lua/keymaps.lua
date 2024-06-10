@@ -6,6 +6,7 @@ function map(mode, new, old, options)
 	vim.api.nvim_set_keymap(mode, new, old, opts)
 end
 
+
 -- Press control+S to save
 map("n", "<C-s>", ":w<CR>")
 map("i", "<C-s>", "<ESC>:w<CR>")
@@ -16,3 +17,7 @@ map("i", "jk", "<ESC>")
 -- Retain indent when moving blocks of code 
 map("v", "<", "<gv")
 map("v", ">", ">gv")
+
+-- Neotree keymaps
+map("n", "<Space><Space>", ":Neotree toggle<CR>")
+map("n", "<Space>e", ":Neotree focus<CR>")
