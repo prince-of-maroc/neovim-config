@@ -23,8 +23,19 @@ require("lazy").setup({
 			}
 	},
 	{
-		'akinsho/toggleterm.nvim', version = "*", config = true
+		"akinsho/toggleterm.nvim", version = "*", config = true
+	},
+	{
+		"lunarvim/darkplus.nvim"
+	},
+	{
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    config = true
+    -- use opts = {} for passing setup options
+    -- this is equalent to setup({}) function
 	}
+		
 })
 
 -- disable netrw at the very start of your init.lua
