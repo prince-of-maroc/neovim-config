@@ -1,0 +1,5 @@
+require "plugins.configurations.lsp"
+require "plugins.configurations.lualine"
+require "plugins.configurations.treesitter"
+require "plugins.configurations.toggleterm"
+require "plugins.configurations.neotree"

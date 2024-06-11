@@ -1,10 +1,3 @@
--- Import plugin configs
-require "./lua/plugins/configurations/lualine"
-require "./lua/plugins/configurations/toggleterm"
-require "./lua/plugins/configurations/neotree"
-require "./lua/plugins/configurations/treesitter"
-require "./lua/plugins/configurations/lsp"
-
 -- Set up lazy plugin maanager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -81,11 +74,3 @@ require("lazy").setup({
 		"L3MON4D3/LuaSnip"
 	},
 })
-
-
--- PLUGIN CONFIGURATIONS
-NeoTree:setup()
-ToggleTerm:setup()
-Lualine:setup()
-Treesitter:setup()
-LSP:setup()

@@ -1,6 +1,7 @@
 require "options"
 require "keymaps"
 require "plugins/plugins"
+require "plugins/configurations"
 
 vim.cmd("colorscheme darkplus")
 
