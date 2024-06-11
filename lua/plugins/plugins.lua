@@ -13,7 +13,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     "clone",
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", 
+    "--branch=stable",
     lazypath,
   })
 end
@@ -27,12 +27,12 @@ require("lazy").setup({
 		branch = "v3.x",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-devicons", 
+			"nvim-tree/nvim-web-devicons",
 			"MunifTanjim/nui.nvim",
 			"3rd/image.nvim",
 		}
 	},
-	{ 
+	{
 		-- Toggleterm
 		"akinsho/toggleterm.nvim", version = "*", config = true
 	},
