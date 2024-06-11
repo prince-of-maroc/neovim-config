@@ -2,8 +2,8 @@
 require "./lua/plugins/configurations/lualine"
 require "./lua/plugins/configurations/toggleterm"
 require "./lua/plugins/configurations/neotree"
-require "./lua/plugins/configurations/lsp"
 require "./lua/plugins/configurations/treesitter"
+require "./lua/plugins/configurations/lsp"
 
 -- Set up lazy plugin maanager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -56,6 +56,30 @@ require("lazy").setup({
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   },
+
+
+	-- LSP + Dependencies
+	{
+		"williamboman/mason.nvim"
+	},
+	{
+		"williamboman/mason-lspconfig.nvim"
+	},
+	{
+		"VonHeikemen/lsp-zero.nvim", branch = "v3.x"
+	},
+	{
+		"neovim/nvim-lspconfig"
+	},
+	{
+		"hrsh7th/cmp-nvim-lsp"
+	},
+	{
+		"hrsh7th/nvim-cmp"
+	},
+	{
+		"L3MON4D3/LuaSnip"
+	},
 })
 
 
@@ -64,3 +88,4 @@ NeoTree:setup()
 ToggleTerm:setup()
 Lualine:setup()
 Treesitter:setup()
+LSP:setup()
